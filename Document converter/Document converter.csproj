@@ -34,8 +34,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SautinSoft.PdfFocus">
-      <HintPath>..\..\..\PDF conversion API\PDF Focus .Net Trial (6.0.11.7)\Bin\Net 4.0\SautinSoft.PdfFocus.dll</HintPath>
+    <Reference Include="Office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\MicrosoftOfficeCore.15.0.0\lib\net35\Office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="SautinSoft.PdfFocus, Version=8.5.10.20, Culture=neutral, PublicKeyToken=0b79b934109b3e9e, processorArchitecture=MSIL">
+      <HintPath>..\packages\sautinsoft.pdffocus.8.5.10.20\lib\net40\SautinSoft.PdfFocus.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -95,6 +100,7 @@
     <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram2.cd" />
     <None Include="ClassDiagram3.cd" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -106,15 +112,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <COMReference Include="Microsoft.Office.Core">
-      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
-      <VersionMajor>2</VersionMajor>
-      <VersionMinor>5</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>primary</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
     <COMReference Include="Microsoft.Office.Interop.Word">
       <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
       <VersionMajor>8</VersionMajor>
